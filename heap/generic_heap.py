@@ -4,6 +4,7 @@ class Heap:
     self.comparator = comparator
 
   def insert(self, value):
+    
     pass
 
   def delete(self):
