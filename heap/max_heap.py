@@ -15,7 +15,15 @@ class Heap:
     pass
 
   def _bubble_up(self, index):
-    pass
+    parent = index // 2
+	  if index <= 1:
+		  return
+		elif self.heap[index] > self.heap[parent]:
+			self.__swap(index, parent)
+      self._bubble_up(parent)
 
   def _sift_down(self, index):
     pass
+
+  def __swap(self, i, j):
+    self.heap[i], self.heap[j] = self.heap[j], self.heap[i]
